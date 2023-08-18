@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Pay.Data.Repositories.Repo;
 
 namespace Pay.Data.Infrestructure
 {
@@ -9,6 +10,20 @@ namespace Pay.Data.Infrestructure
         public UnitOfWork()
         {
             _db = new TContext();
+        }
+        #endregion
+        #region Repository
+        private UserRepository userRepository { get; set; }
+        public UserRepository UserRepository
+        {
+            get
+            {
+                if (userRepository == null)
+                {
+                    userRepository = new UserRepository(_db);
+                }
+                return userRepository;
+            }
         }
         #endregion
         #region save

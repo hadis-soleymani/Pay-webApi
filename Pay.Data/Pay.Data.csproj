@@ -17,8 +17,4 @@
     <ProjectReference Include="..\Pay.Common\Pay.Common.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
 </Project>

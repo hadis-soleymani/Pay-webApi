@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 
 namespace Pay.Data.Infrestructure
 {
-    public class Repository<TEntity> : IRepository<TEntity>, IDisposable where TEntity : class
+    public abstract class Repository<TEntity> : IRepository<TEntity>, IDisposable where TEntity : class
     {
         #region ctor
         private readonly DbContext _db;
