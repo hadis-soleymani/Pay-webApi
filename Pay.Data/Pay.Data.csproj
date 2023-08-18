@@ -7,11 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Pay.Common\Pay.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Infrestructure\" />
+    <Folder Include="Repositories\" />
   </ItemGroup>
 
 </Project>
