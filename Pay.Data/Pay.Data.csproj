@@ -18,7 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Infrestructure\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
 
